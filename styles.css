@@ -1,0 +1,172 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;;
+}
+
+html{
+    height: 100%;
+    font-size: 60%;
+}
+
+body{
+    height: 100%;
+    background: var(--Very-Dark-Blue);
+    color: var(--Light-Grey);
+    /* display: flex; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+
+}
+
+.rating-card{
+    
+    background: linear-gradient(to bottom ,hsl(213, 19%, 18%),hsl(214, 25%, 13%));
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.icon{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: hsl(210, 20%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.rating-card .heading{
+    color:  var(--White);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.rating-card .sub-heading{
+    color:  var(--Light-Grey);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rating-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+button{
+    border-style: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+  user-select: none;
+  appearance: none;
+}
+.rate{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: hsl(210, 20%, 24%);
+    color: var(--Light-Grey);
+    font-weight: 700;
+}
+
+.rate:hover{
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+
+}
+.rate.active{
+    background: var(--Light-Grey);
+    color: hsl(0, 0%, 100%);
+
+}
+.submit-div{
+    display: flex;
+    justify-content: center;
+}
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    width:100%;
+    height: 4rem;
+    align-items: center;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.submit-btn:hover{
+    background-color: hsl(0, 0%, 100%);;
+    color: hsl(25, 97%, 53%);
+}
+
+.thankyouCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom ,hsl(213, 19%, 18%),hsl(214, 25%, 13%));
+    border-radius: 2rem;
+    padding: 3rem 3.5rem 2rem;
+    text-align: center;
+    
+}
+
+.ratingScore{
+    
+    background-color: hsl(210, 20%, 24%);
+    color: hsl(25, 97%, 53%);
+    max-width: max-content;
+    padding: 1.2rem 2rem;
+    border-radius: 50rem;
+    line-height: 1;
+    margin: 4rem 0 3rem;
+    font-size: 1.5rem;
+    
+}
+
+.thankyouCard .heading{
+    color:  var(--White);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.thankyouCard .sub-heading{
+    color:  var(--Light-Grey);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+.hidden{
+    display: none;
+}
